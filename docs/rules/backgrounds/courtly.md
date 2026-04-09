@@ -1,75 +1,68 @@
 # Courtly Background
 
-This file defines the 5-level branching tree for the Courtly origin, with mechanical benefits at each decision.
+This file defines the 5-level branching tree for the Courtly origin. Every decision grants exactly one of: +1 stat point, +2 stat points with -1 stat point, or a basic proficiency.
 
 ## Decision Keys
 
 ### Level 1
-* `1` **Noble Court:** +1 Will.
-* `2` **Merchant Court:** +1 Intellect.
+* `1` **Noble Court:** +1 Stat Point to Will.
+* `2` **Merchant Court:** +1 Stat Point to Intellect.
 
 ### Level 2
-* `.1` **Protocol School:** Expert etiquette protocol and rank customs.
-* `.2` **Ledger School:** Expert finance tariffs and deal structures.
+* `.1` **Protocol School:** Gain proficiency in Persuasion.
+* `.2` **Ledger School:** Gain proficiency in Insight.
 
 ### Level 3
-* `.1` **Salon Reader:** +2 to checks to read motives and faction alignment in social scenes.
-* `.2` **Petitioner:** +2 to checks to draft petitions decrees or formal arguments.
+* `.1` **Salon Reader:** +2 Stat Points: +1 Intellect and +1 Will; -1 Stat Point to Prowess.
+* `.2` **Petitioner:** +2 Stat Points: +1 Will and +1 Agility; -1 Stat Point to Constitution.
 
 ### Level 4
-* `.1` **Poised Deflection:** Once per scene downgrade one hostile social result against you by one step.
-* `.2` **Strategic Compliment:** Once per scene grant an ally +2 on one social check.
+* `.1` **Honor Guard:** Gain proficiency in Martial Weapons.
+* `.2` **Silver Ink:** Gain proficiency in one basic Cantrip.
 
 ### Level 5
-* `.1` **Silver Name:** Once per scene shift one neutral NPC disposition to favorable for one exchange.
-* `.2` **Quiet Dossier:** Start each session with 1 dossier token (+2 on one leverage social check); on a failed use that target becomes one step more hostile.
+* `.1` **Silver Name:** +1 Stat Point to Will.
+* `.2` **Quiet Dossier:** +2 Stat Points: +1 Intellect and +1 Agility; -1 Stat Point to Prowess.
 
 ## Explicit Branch Tree
 
 * **Decision Level 1:**
-  * `1` Noble Court (+1 Will.)
-  * `2` Merchant Court (+1 Intellect.)
+  * `1` Noble Court (+1 Stat Point to Will.)
+  * `2` Merchant Court (+1 Stat Point to Intellect.)
 * **Decision Level 2:**
-  * `1` -> `1.1` (Protocol School: Expert etiquette protocol and rank customs.) or `1.2` (Ledger School: Expert finance tariffs and deal structures.)
-  * `2` -> `2.1` (Protocol School: Expert etiquette protocol and rank customs.) or `2.2` (Ledger School: Expert finance tariffs and deal structures.)
+  * `1` -> `1.1` (Protocol School: Gain proficiency in Persuasion.) or `1.2` (Ledger School: Gain proficiency in Insight.)
+  * `2` -> `2.1` (Protocol School: Gain proficiency in Persuasion.) or `2.2` (Ledger School: Gain proficiency in Insight.)
 * **Decision Level 3:**
-  * `1.1` -> `1.1.1` (Salon Reader: +2 to checks to read motives and faction alignment in social scenes.) or `1.1.2` (Petitioner: +2 to checks to draft petitions decrees or formal arguments.)
-  * `1.2` -> `1.2.1` (Salon Reader: +2 to checks to read motives and faction alignment in social scenes.) or `1.2.2` (Petitioner: +2 to checks to draft petitions decrees or formal arguments.)
-  * `2.1` -> `2.1.1` (Salon Reader: +2 to checks to read motives and faction alignment in social scenes.) or `2.1.2` (Petitioner: +2 to checks to draft petitions decrees or formal arguments.)
-  * `2.2` -> `2.2.1` (Salon Reader: +2 to checks to read motives and faction alignment in social scenes.) or `2.2.2` (Petitioner: +2 to checks to draft petitions decrees or formal arguments.)
+  * `1.1` -> `1.1.1` (Salon Reader: +2 Stat Points: +1 Intellect and +1 Will; -1 Stat Point to Prowess.) or `1.1.2` (Petitioner: +2 Stat Points: +1 Will and +1 Agility; -1 Stat Point to Constitution.)
+  * `1.2` -> `1.2.1` (Salon Reader: +2 Stat Points: +1 Intellect and +1 Will; -1 Stat Point to Prowess.) or `1.2.2` (Petitioner: +2 Stat Points: +1 Will and +1 Agility; -1 Stat Point to Constitution.)
+  * `2.1` -> `2.1.1` (Salon Reader: +2 Stat Points: +1 Intellect and +1 Will; -1 Stat Point to Prowess.) or `2.1.2` (Petitioner: +2 Stat Points: +1 Will and +1 Agility; -1 Stat Point to Constitution.)
+  * `2.2` -> `2.2.1` (Salon Reader: +2 Stat Points: +1 Intellect and +1 Will; -1 Stat Point to Prowess.) or `2.2.2` (Petitioner: +2 Stat Points: +1 Will and +1 Agility; -1 Stat Point to Constitution.)
 * **Decision Level 4:**
-  * `1.1.1` -> `1.1.1.1` (Poised Deflection: Once per scene downgrade one hostile social result against you by one step.) or `1.1.1.2` (Strategic Compliment: Once per scene grant an ally +2 on one social check.)
-  * `1.1.2` -> `1.1.2.1` (Poised Deflection: Once per scene downgrade one hostile social result against you by one step.) or `1.1.2.2` (Strategic Compliment: Once per scene grant an ally +2 on one social check.)
-  * `1.2.1` -> `1.2.1.1` (Poised Deflection: Once per scene downgrade one hostile social result against you by one step.) or `1.2.1.2` (Strategic Compliment: Once per scene grant an ally +2 on one social check.)
-  * `1.2.2` -> `1.2.2.1` (Poised Deflection: Once per scene downgrade one hostile social result against you by one step.) or `1.2.2.2` (Strategic Compliment: Once per scene grant an ally +2 on one social check.)
-  * `2.1.1` -> `2.1.1.1` (Poised Deflection: Once per scene downgrade one hostile social result against you by one step.) or `2.1.1.2` (Strategic Compliment: Once per scene grant an ally +2 on one social check.)
-  * `2.1.2` -> `2.1.2.1` (Poised Deflection: Once per scene downgrade one hostile social result against you by one step.) or `2.1.2.2` (Strategic Compliment: Once per scene grant an ally +2 on one social check.)
-  * `2.2.1` -> `2.2.1.1` (Poised Deflection: Once per scene downgrade one hostile social result against you by one step.) or `2.2.1.2` (Strategic Compliment: Once per scene grant an ally +2 on one social check.)
-  * `2.2.2` -> `2.2.2.1` (Poised Deflection: Once per scene downgrade one hostile social result against you by one step.) or `2.2.2.2` (Strategic Compliment: Once per scene grant an ally +2 on one social check.)
+  * `1.1.1` -> `1.1.1.1` (Honor Guard: Gain proficiency in Martial Weapons.) or `1.1.1.2` (Silver Ink: Gain proficiency in one basic Cantrip.)
+  * `1.1.2` -> `1.1.2.1` (Honor Guard: Gain proficiency in Martial Weapons.) or `1.1.2.2` (Silver Ink: Gain proficiency in one basic Cantrip.)
+  * `1.2.1` -> `1.2.1.1` (Honor Guard: Gain proficiency in Martial Weapons.) or `1.2.1.2` (Silver Ink: Gain proficiency in one basic Cantrip.)
+  * `1.2.2` -> `1.2.2.1` (Honor Guard: Gain proficiency in Martial Weapons.) or `1.2.2.2` (Silver Ink: Gain proficiency in one basic Cantrip.)
+  * `2.1.1` -> `2.1.1.1` (Honor Guard: Gain proficiency in Martial Weapons.) or `2.1.1.2` (Silver Ink: Gain proficiency in one basic Cantrip.)
+  * `2.1.2` -> `2.1.2.1` (Honor Guard: Gain proficiency in Martial Weapons.) or `2.1.2.2` (Silver Ink: Gain proficiency in one basic Cantrip.)
+  * `2.2.1` -> `2.2.1.1` (Honor Guard: Gain proficiency in Martial Weapons.) or `2.2.1.2` (Silver Ink: Gain proficiency in one basic Cantrip.)
+  * `2.2.2` -> `2.2.2.1` (Honor Guard: Gain proficiency in Martial Weapons.) or `2.2.2.2` (Silver Ink: Gain proficiency in one basic Cantrip.)
 * **Decision Level 5:**
-  * `1.1.1.1` -> `1.1.1.1.1` (Silver Name: Once per scene shift one neutral NPC disposition to favorable for one exchange.) or `1.1.1.1.2` (Quiet Dossier: Start each session with 1 dossier token (+2 on one leverage social check); on a failed use that target becomes one step more hostile.)
-  * `1.1.1.2` -> `1.1.1.2.1` (Silver Name: Once per scene shift one neutral NPC disposition to favorable for one exchange.) or `1.1.1.2.2` (Quiet Dossier: Start each session with 1 dossier token (+2 on one leverage social check); on a failed use that target becomes one step more hostile.)
-  * `1.1.2.1` -> `1.1.2.1.1` (Silver Name: Once per scene shift one neutral NPC disposition to favorable for one exchange.) or `1.1.2.1.2` (Quiet Dossier: Start each session with 1 dossier token (+2 on one leverage social check); on a failed use that target becomes one step more hostile.)
-  * `1.1.2.2` -> `1.1.2.2.1` (Silver Name: Once per scene shift one neutral NPC disposition to favorable for one exchange.) or `1.1.2.2.2` (Quiet Dossier: Start each session with 1 dossier token (+2 on one leverage social check); on a failed use that target becomes one step more hostile.)
-  * `1.2.1.1` -> `1.2.1.1.1` (Silver Name: Once per scene shift one neutral NPC disposition to favorable for one exchange.) or `1.2.1.1.2` (Quiet Dossier: Start each session with 1 dossier token (+2 on one leverage social check); on a failed use that target becomes one step more hostile.)
-  * `1.2.1.2` -> `1.2.1.2.1` (Silver Name: Once per scene shift one neutral NPC disposition to favorable for one exchange.) or `1.2.1.2.2` (Quiet Dossier: Start each session with 1 dossier token (+2 on one leverage social check); on a failed use that target becomes one step more hostile.)
-  * `1.2.2.1` -> `1.2.2.1.1` (Silver Name: Once per scene shift one neutral NPC disposition to favorable for one exchange.) or `1.2.2.1.2` (Quiet Dossier: Start each session with 1 dossier token (+2 on one leverage social check); on a failed use that target becomes one step more hostile.)
-  * `1.2.2.2` -> `1.2.2.2.1` (Silver Name: Once per scene shift one neutral NPC disposition to favorable for one exchange.) or `1.2.2.2.2` (Quiet Dossier: Start each session with 1 dossier token (+2 on one leverage social check); on a failed use that target becomes one step more hostile.)
-  * `2.1.1.1` -> `2.1.1.1.1` (Silver Name: Once per scene shift one neutral NPC disposition to favorable for one exchange.) or `2.1.1.1.2` (Quiet Dossier: Start each session with 1 dossier token (+2 on one leverage social check); on a failed use that target becomes one step more hostile.)
-  * `2.1.1.2` -> `2.1.1.2.1` (Silver Name: Once per scene shift one neutral NPC disposition to favorable for one exchange.) or `2.1.1.2.2` (Quiet Dossier: Start each session with 1 dossier token (+2 on one leverage social check); on a failed use that target becomes one step more hostile.)
-  * `2.1.2.1` -> `2.1.2.1.1` (Silver Name: Once per scene shift one neutral NPC disposition to favorable for one exchange.) or `2.1.2.1.2` (Quiet Dossier: Start each session with 1 dossier token (+2 on one leverage social check); on a failed use that target becomes one step more hostile.)
-  * `2.1.2.2` -> `2.1.2.2.1` (Silver Name: Once per scene shift one neutral NPC disposition to favorable for one exchange.) or `2.1.2.2.2` (Quiet Dossier: Start each session with 1 dossier token (+2 on one leverage social check); on a failed use that target becomes one step more hostile.)
-  * `2.2.1.1` -> `2.2.1.1.1` (Silver Name: Once per scene shift one neutral NPC disposition to favorable for one exchange.) or `2.2.1.1.2` (Quiet Dossier: Start each session with 1 dossier token (+2 on one leverage social check); on a failed use that target becomes one step more hostile.)
-  * `2.2.1.2` -> `2.2.1.2.1` (Silver Name: Once per scene shift one neutral NPC disposition to favorable for one exchange.) or `2.2.1.2.2` (Quiet Dossier: Start each session with 1 dossier token (+2 on one leverage social check); on a failed use that target becomes one step more hostile.)
-  * `2.2.2.1` -> `2.2.2.1.1` (Silver Name: Once per scene shift one neutral NPC disposition to favorable for one exchange.) or `2.2.2.1.2` (Quiet Dossier: Start each session with 1 dossier token (+2 on one leverage social check); on a failed use that target becomes one step more hostile.)
-  * `2.2.2.2` -> `2.2.2.2.1` (Silver Name: Once per scene shift one neutral NPC disposition to favorable for one exchange.) or `2.2.2.2.2` (Quiet Dossier: Start each session with 1 dossier token (+2 on one leverage social check); on a failed use that target becomes one step more hostile.)
+  * `1.1.1.1` -> `1.1.1.1.1` (Silver Name: +1 Stat Point to Will.) or `1.1.1.1.2` (Quiet Dossier: +2 Stat Points: +1 Intellect and +1 Agility; -1 Stat Point to Prowess.)
+  * `1.1.1.2` -> `1.1.1.2.1` (Silver Name: +1 Stat Point to Will.) or `1.1.1.2.2` (Quiet Dossier: +2 Stat Points: +1 Intellect and +1 Agility; -1 Stat Point to Prowess.)
+  * `1.1.2.1` -> `1.1.2.1.1` (Silver Name: +1 Stat Point to Will.) or `1.1.2.1.2` (Quiet Dossier: +2 Stat Points: +1 Intellect and +1 Agility; -1 Stat Point to Prowess.)
+  * `1.1.2.2` -> `1.1.2.2.1` (Silver Name: +1 Stat Point to Will.) or `1.1.2.2.2` (Quiet Dossier: +2 Stat Points: +1 Intellect and +1 Agility; -1 Stat Point to Prowess.)
+  * `1.2.1.1` -> `1.2.1.1.1` (Silver Name: +1 Stat Point to Will.) or `1.2.1.1.2` (Quiet Dossier: +2 Stat Points: +1 Intellect and +1 Agility; -1 Stat Point to Prowess.)
+  * `1.2.1.2` -> `1.2.1.2.1` (Silver Name: +1 Stat Point to Will.) or `1.2.1.2.2` (Quiet Dossier: +2 Stat Points: +1 Intellect and +1 Agility; -1 Stat Point to Prowess.)
+  * `1.2.2.1` -> `1.2.2.1.1` (Silver Name: +1 Stat Point to Will.) or `1.2.2.1.2` (Quiet Dossier: +2 Stat Points: +1 Intellect and +1 Agility; -1 Stat Point to Prowess.)
+  * `1.2.2.2` -> `1.2.2.2.1` (Silver Name: +1 Stat Point to Will.) or `1.2.2.2.2` (Quiet Dossier: +2 Stat Points: +1 Intellect and +1 Agility; -1 Stat Point to Prowess.)
+  * `2.1.1.1` -> `2.1.1.1.1` (Silver Name: +1 Stat Point to Will.) or `2.1.1.1.2` (Quiet Dossier: +2 Stat Points: +1 Intellect and +1 Agility; -1 Stat Point to Prowess.)
+  * `2.1.1.2` -> `2.1.1.2.1` (Silver Name: +1 Stat Point to Will.) or `2.1.1.2.2` (Quiet Dossier: +2 Stat Points: +1 Intellect and +1 Agility; -1 Stat Point to Prowess.)
+  * `2.1.2.1` -> `2.1.2.1.1` (Silver Name: +1 Stat Point to Will.) or `2.1.2.1.2` (Quiet Dossier: +2 Stat Points: +1 Intellect and +1 Agility; -1 Stat Point to Prowess.)
+  * `2.1.2.2` -> `2.1.2.2.1` (Silver Name: +1 Stat Point to Will.) or `2.1.2.2.2` (Quiet Dossier: +2 Stat Points: +1 Intellect and +1 Agility; -1 Stat Point to Prowess.)
+  * `2.2.1.1` -> `2.2.1.1.1` (Silver Name: +1 Stat Point to Will.) or `2.2.1.1.2` (Quiet Dossier: +2 Stat Points: +1 Intellect and +1 Agility; -1 Stat Point to Prowess.)
+  * `2.2.1.2` -> `2.2.1.2.1` (Silver Name: +1 Stat Point to Will.) or `2.2.1.2.2` (Quiet Dossier: +2 Stat Points: +1 Intellect and +1 Agility; -1 Stat Point to Prowess.)
+  * `2.2.2.1` -> `2.2.2.1.1` (Silver Name: +1 Stat Point to Will.) or `2.2.2.1.2` (Quiet Dossier: +2 Stat Points: +1 Intellect and +1 Agility; -1 Stat Point to Prowess.)
+  * `2.2.2.2` -> `2.2.2.2.1` (Silver Name: +1 Stat Point to Will.) or `2.2.2.2.2` (Quiet Dossier: +2 Stat Points: +1 Intellect and +1 Agility; -1 Stat Point to Prowess.)
 
 * **Level 5 Final Paths (32 total):**
   * `1.1.1.1.1`, `1.1.1.1.2`, `1.1.1.2.1`, `1.1.1.2.2`, `1.1.2.1.1`, `1.1.2.1.2`, `1.1.2.2.1`, `1.1.2.2.2`, `1.2.1.1.1`, `1.2.1.1.2`, `1.2.1.2.1`, `1.2.1.2.2`, `1.2.2.1.1`, `1.2.2.1.2`, `1.2.2.2.1`, `1.2.2.2.2`, `2.1.1.1.1`, `2.1.1.1.2`, `2.1.1.2.1`, `2.1.1.2.2`, `2.1.2.1.1`, `2.1.2.1.2`, `2.1.2.2.1`, `2.1.2.2.2`, `2.2.1.1.1`, `2.2.1.1.2`, `2.2.1.2.1`, `2.2.1.2.2`, `2.2.2.1.1`, `2.2.2.1.2`, `2.2.2.2.1`, `2.2.2.2.2`
-
-## Balance Notes
-
-* Level 1 is a core stat or equivalent baseline benefit.
-* Levels 2-3 focus on expertise and situational +2 bonuses.
-* Level 4 is a once-per-scene utility or reaction power.
-* Level 5 is a capstone; stronger options may include a drawback.

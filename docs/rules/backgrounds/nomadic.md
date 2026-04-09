@@ -1,75 +1,68 @@
 # Nomadic Background
 
-This file defines the 5-level branching tree for the Nomadic origin, with mechanical benefits at each decision.
+This file defines the 5-level branching tree for the Nomadic origin. Every decision grants exactly one of: +1 stat point, +2 stat points with -1 stat point, or a basic proficiency.
 
 ## Decision Keys
 
 ### Level 1
-* `1` **Caravan Routes:** +1 Agility.
-* `2` **Open Steppe:** +1 Constitution.
+* `1` **Caravan Routes:** +1 Stat Point to Agility.
+* `2` **Open Steppe:** +1 Stat Point to Constitution.
 
 ### Level 2
-* `.1` **Trail Scout:** Expert route scouting and hazard marking.
-* `.2` **Camp Maker:** Expert setup of field shelters and temporary works.
+* `.1` **Trail Scout:** Gain proficiency in Survival.
+* `.2` **Camp Maker:** Gain proficiency in Crafting.
 
 ### Level 3
-* `.1` **Wind Reader:** +2 to checks to predict weather and travel windows.
-* `.2` **Crossing Keeper:** +2 to checks to guide groups across rivers canyons or dunes.
+* `.1` **Wind Reader:** +2 Stat Points: +1 Intellect and +1 Will; -1 Stat Point to Prowess.
+* `.2` **Crossing Keeper:** +2 Stat Points: +1 Agility and +1 Constitution; -1 Stat Point to Intellect.
 
 ### Level 4
-* `.1` **Mobile Cover:** Once per scene gain cover while moving through open ground.
-* `.2` **Pack Discipline:** Once per scene negate one supply loss or gear mishap.
+* `.1` **Horsebow Drill:** Gain proficiency in Martial Weapons.
+* `.2` **Caravan Guard:** Gain proficiency in Simple Weapons.
 
 ### Level 5
-* `.1` **Long Marcher:** Ignore the first fatigue effect you would take each day.
-* `.2` **Rider Pounce:** First time each combat you move 15 plus feet before hitting apply [Exposed]; if the attack misses take -1 Defense until your next turn.
+* `.1` **Long Marcher:** +1 Stat Point to Constitution.
+* `.2` **Rider Pounce:** +2 Stat Points: +1 Agility and +1 Prowess; -1 Stat Point to Will.
 
 ## Explicit Branch Tree
 
 * **Decision Level 1:**
-  * `1` Caravan Routes (+1 Agility.)
-  * `2` Open Steppe (+1 Constitution.)
+  * `1` Caravan Routes (+1 Stat Point to Agility.)
+  * `2` Open Steppe (+1 Stat Point to Constitution.)
 * **Decision Level 2:**
-  * `1` -> `1.1` (Trail Scout: Expert route scouting and hazard marking.) or `1.2` (Camp Maker: Expert setup of field shelters and temporary works.)
-  * `2` -> `2.1` (Trail Scout: Expert route scouting and hazard marking.) or `2.2` (Camp Maker: Expert setup of field shelters and temporary works.)
+  * `1` -> `1.1` (Trail Scout: Gain proficiency in Survival.) or `1.2` (Camp Maker: Gain proficiency in Crafting.)
+  * `2` -> `2.1` (Trail Scout: Gain proficiency in Survival.) or `2.2` (Camp Maker: Gain proficiency in Crafting.)
 * **Decision Level 3:**
-  * `1.1` -> `1.1.1` (Wind Reader: +2 to checks to predict weather and travel windows.) or `1.1.2` (Crossing Keeper: +2 to checks to guide groups across rivers canyons or dunes.)
-  * `1.2` -> `1.2.1` (Wind Reader: +2 to checks to predict weather and travel windows.) or `1.2.2` (Crossing Keeper: +2 to checks to guide groups across rivers canyons or dunes.)
-  * `2.1` -> `2.1.1` (Wind Reader: +2 to checks to predict weather and travel windows.) or `2.1.2` (Crossing Keeper: +2 to checks to guide groups across rivers canyons or dunes.)
-  * `2.2` -> `2.2.1` (Wind Reader: +2 to checks to predict weather and travel windows.) or `2.2.2` (Crossing Keeper: +2 to checks to guide groups across rivers canyons or dunes.)
+  * `1.1` -> `1.1.1` (Wind Reader: +2 Stat Points: +1 Intellect and +1 Will; -1 Stat Point to Prowess.) or `1.1.2` (Crossing Keeper: +2 Stat Points: +1 Agility and +1 Constitution; -1 Stat Point to Intellect.)
+  * `1.2` -> `1.2.1` (Wind Reader: +2 Stat Points: +1 Intellect and +1 Will; -1 Stat Point to Prowess.) or `1.2.2` (Crossing Keeper: +2 Stat Points: +1 Agility and +1 Constitution; -1 Stat Point to Intellect.)
+  * `2.1` -> `2.1.1` (Wind Reader: +2 Stat Points: +1 Intellect and +1 Will; -1 Stat Point to Prowess.) or `2.1.2` (Crossing Keeper: +2 Stat Points: +1 Agility and +1 Constitution; -1 Stat Point to Intellect.)
+  * `2.2` -> `2.2.1` (Wind Reader: +2 Stat Points: +1 Intellect and +1 Will; -1 Stat Point to Prowess.) or `2.2.2` (Crossing Keeper: +2 Stat Points: +1 Agility and +1 Constitution; -1 Stat Point to Intellect.)
 * **Decision Level 4:**
-  * `1.1.1` -> `1.1.1.1` (Mobile Cover: Once per scene gain cover while moving through open ground.) or `1.1.1.2` (Pack Discipline: Once per scene negate one supply loss or gear mishap.)
-  * `1.1.2` -> `1.1.2.1` (Mobile Cover: Once per scene gain cover while moving through open ground.) or `1.1.2.2` (Pack Discipline: Once per scene negate one supply loss or gear mishap.)
-  * `1.2.1` -> `1.2.1.1` (Mobile Cover: Once per scene gain cover while moving through open ground.) or `1.2.1.2` (Pack Discipline: Once per scene negate one supply loss or gear mishap.)
-  * `1.2.2` -> `1.2.2.1` (Mobile Cover: Once per scene gain cover while moving through open ground.) or `1.2.2.2` (Pack Discipline: Once per scene negate one supply loss or gear mishap.)
-  * `2.1.1` -> `2.1.1.1` (Mobile Cover: Once per scene gain cover while moving through open ground.) or `2.1.1.2` (Pack Discipline: Once per scene negate one supply loss or gear mishap.)
-  * `2.1.2` -> `2.1.2.1` (Mobile Cover: Once per scene gain cover while moving through open ground.) or `2.1.2.2` (Pack Discipline: Once per scene negate one supply loss or gear mishap.)
-  * `2.2.1` -> `2.2.1.1` (Mobile Cover: Once per scene gain cover while moving through open ground.) or `2.2.1.2` (Pack Discipline: Once per scene negate one supply loss or gear mishap.)
-  * `2.2.2` -> `2.2.2.1` (Mobile Cover: Once per scene gain cover while moving through open ground.) or `2.2.2.2` (Pack Discipline: Once per scene negate one supply loss or gear mishap.)
+  * `1.1.1` -> `1.1.1.1` (Horsebow Drill: Gain proficiency in Martial Weapons.) or `1.1.1.2` (Caravan Guard: Gain proficiency in Simple Weapons.)
+  * `1.1.2` -> `1.1.2.1` (Horsebow Drill: Gain proficiency in Martial Weapons.) or `1.1.2.2` (Caravan Guard: Gain proficiency in Simple Weapons.)
+  * `1.2.1` -> `1.2.1.1` (Horsebow Drill: Gain proficiency in Martial Weapons.) or `1.2.1.2` (Caravan Guard: Gain proficiency in Simple Weapons.)
+  * `1.2.2` -> `1.2.2.1` (Horsebow Drill: Gain proficiency in Martial Weapons.) or `1.2.2.2` (Caravan Guard: Gain proficiency in Simple Weapons.)
+  * `2.1.1` -> `2.1.1.1` (Horsebow Drill: Gain proficiency in Martial Weapons.) or `2.1.1.2` (Caravan Guard: Gain proficiency in Simple Weapons.)
+  * `2.1.2` -> `2.1.2.1` (Horsebow Drill: Gain proficiency in Martial Weapons.) or `2.1.2.2` (Caravan Guard: Gain proficiency in Simple Weapons.)
+  * `2.2.1` -> `2.2.1.1` (Horsebow Drill: Gain proficiency in Martial Weapons.) or `2.2.1.2` (Caravan Guard: Gain proficiency in Simple Weapons.)
+  * `2.2.2` -> `2.2.2.1` (Horsebow Drill: Gain proficiency in Martial Weapons.) or `2.2.2.2` (Caravan Guard: Gain proficiency in Simple Weapons.)
 * **Decision Level 5:**
-  * `1.1.1.1` -> `1.1.1.1.1` (Long Marcher: Ignore the first fatigue effect you would take each day.) or `1.1.1.1.2` (Rider Pounce: First time each combat you move 15 plus feet before hitting apply [Exposed]; if the attack misses take -1 Defense until your next turn.)
-  * `1.1.1.2` -> `1.1.1.2.1` (Long Marcher: Ignore the first fatigue effect you would take each day.) or `1.1.1.2.2` (Rider Pounce: First time each combat you move 15 plus feet before hitting apply [Exposed]; if the attack misses take -1 Defense until your next turn.)
-  * `1.1.2.1` -> `1.1.2.1.1` (Long Marcher: Ignore the first fatigue effect you would take each day.) or `1.1.2.1.2` (Rider Pounce: First time each combat you move 15 plus feet before hitting apply [Exposed]; if the attack misses take -1 Defense until your next turn.)
-  * `1.1.2.2` -> `1.1.2.2.1` (Long Marcher: Ignore the first fatigue effect you would take each day.) or `1.1.2.2.2` (Rider Pounce: First time each combat you move 15 plus feet before hitting apply [Exposed]; if the attack misses take -1 Defense until your next turn.)
-  * `1.2.1.1` -> `1.2.1.1.1` (Long Marcher: Ignore the first fatigue effect you would take each day.) or `1.2.1.1.2` (Rider Pounce: First time each combat you move 15 plus feet before hitting apply [Exposed]; if the attack misses take -1 Defense until your next turn.)
-  * `1.2.1.2` -> `1.2.1.2.1` (Long Marcher: Ignore the first fatigue effect you would take each day.) or `1.2.1.2.2` (Rider Pounce: First time each combat you move 15 plus feet before hitting apply [Exposed]; if the attack misses take -1 Defense until your next turn.)
-  * `1.2.2.1` -> `1.2.2.1.1` (Long Marcher: Ignore the first fatigue effect you would take each day.) or `1.2.2.1.2` (Rider Pounce: First time each combat you move 15 plus feet before hitting apply [Exposed]; if the attack misses take -1 Defense until your next turn.)
-  * `1.2.2.2` -> `1.2.2.2.1` (Long Marcher: Ignore the first fatigue effect you would take each day.) or `1.2.2.2.2` (Rider Pounce: First time each combat you move 15 plus feet before hitting apply [Exposed]; if the attack misses take -1 Defense until your next turn.)
-  * `2.1.1.1` -> `2.1.1.1.1` (Long Marcher: Ignore the first fatigue effect you would take each day.) or `2.1.1.1.2` (Rider Pounce: First time each combat you move 15 plus feet before hitting apply [Exposed]; if the attack misses take -1 Defense until your next turn.)
-  * `2.1.1.2` -> `2.1.1.2.1` (Long Marcher: Ignore the first fatigue effect you would take each day.) or `2.1.1.2.2` (Rider Pounce: First time each combat you move 15 plus feet before hitting apply [Exposed]; if the attack misses take -1 Defense until your next turn.)
-  * `2.1.2.1` -> `2.1.2.1.1` (Long Marcher: Ignore the first fatigue effect you would take each day.) or `2.1.2.1.2` (Rider Pounce: First time each combat you move 15 plus feet before hitting apply [Exposed]; if the attack misses take -1 Defense until your next turn.)
-  * `2.1.2.2` -> `2.1.2.2.1` (Long Marcher: Ignore the first fatigue effect you would take each day.) or `2.1.2.2.2` (Rider Pounce: First time each combat you move 15 plus feet before hitting apply [Exposed]; if the attack misses take -1 Defense until your next turn.)
-  * `2.2.1.1` -> `2.2.1.1.1` (Long Marcher: Ignore the first fatigue effect you would take each day.) or `2.2.1.1.2` (Rider Pounce: First time each combat you move 15 plus feet before hitting apply [Exposed]; if the attack misses take -1 Defense until your next turn.)
-  * `2.2.1.2` -> `2.2.1.2.1` (Long Marcher: Ignore the first fatigue effect you would take each day.) or `2.2.1.2.2` (Rider Pounce: First time each combat you move 15 plus feet before hitting apply [Exposed]; if the attack misses take -1 Defense until your next turn.)
-  * `2.2.2.1` -> `2.2.2.1.1` (Long Marcher: Ignore the first fatigue effect you would take each day.) or `2.2.2.1.2` (Rider Pounce: First time each combat you move 15 plus feet before hitting apply [Exposed]; if the attack misses take -1 Defense until your next turn.)
-  * `2.2.2.2` -> `2.2.2.2.1` (Long Marcher: Ignore the first fatigue effect you would take each day.) or `2.2.2.2.2` (Rider Pounce: First time each combat you move 15 plus feet before hitting apply [Exposed]; if the attack misses take -1 Defense until your next turn.)
+  * `1.1.1.1` -> `1.1.1.1.1` (Long Marcher: +1 Stat Point to Constitution.) or `1.1.1.1.2` (Rider Pounce: +2 Stat Points: +1 Agility and +1 Prowess; -1 Stat Point to Will.)
+  * `1.1.1.2` -> `1.1.1.2.1` (Long Marcher: +1 Stat Point to Constitution.) or `1.1.1.2.2` (Rider Pounce: +2 Stat Points: +1 Agility and +1 Prowess; -1 Stat Point to Will.)
+  * `1.1.2.1` -> `1.1.2.1.1` (Long Marcher: +1 Stat Point to Constitution.) or `1.1.2.1.2` (Rider Pounce: +2 Stat Points: +1 Agility and +1 Prowess; -1 Stat Point to Will.)
+  * `1.1.2.2` -> `1.1.2.2.1` (Long Marcher: +1 Stat Point to Constitution.) or `1.1.2.2.2` (Rider Pounce: +2 Stat Points: +1 Agility and +1 Prowess; -1 Stat Point to Will.)
+  * `1.2.1.1` -> `1.2.1.1.1` (Long Marcher: +1 Stat Point to Constitution.) or `1.2.1.1.2` (Rider Pounce: +2 Stat Points: +1 Agility and +1 Prowess; -1 Stat Point to Will.)
+  * `1.2.1.2` -> `1.2.1.2.1` (Long Marcher: +1 Stat Point to Constitution.) or `1.2.1.2.2` (Rider Pounce: +2 Stat Points: +1 Agility and +1 Prowess; -1 Stat Point to Will.)
+  * `1.2.2.1` -> `1.2.2.1.1` (Long Marcher: +1 Stat Point to Constitution.) or `1.2.2.1.2` (Rider Pounce: +2 Stat Points: +1 Agility and +1 Prowess; -1 Stat Point to Will.)
+  * `1.2.2.2` -> `1.2.2.2.1` (Long Marcher: +1 Stat Point to Constitution.) or `1.2.2.2.2` (Rider Pounce: +2 Stat Points: +1 Agility and +1 Prowess; -1 Stat Point to Will.)
+  * `2.1.1.1` -> `2.1.1.1.1` (Long Marcher: +1 Stat Point to Constitution.) or `2.1.1.1.2` (Rider Pounce: +2 Stat Points: +1 Agility and +1 Prowess; -1 Stat Point to Will.)
+  * `2.1.1.2` -> `2.1.1.2.1` (Long Marcher: +1 Stat Point to Constitution.) or `2.1.1.2.2` (Rider Pounce: +2 Stat Points: +1 Agility and +1 Prowess; -1 Stat Point to Will.)
+  * `2.1.2.1` -> `2.1.2.1.1` (Long Marcher: +1 Stat Point to Constitution.) or `2.1.2.1.2` (Rider Pounce: +2 Stat Points: +1 Agility and +1 Prowess; -1 Stat Point to Will.)
+  * `2.1.2.2` -> `2.1.2.2.1` (Long Marcher: +1 Stat Point to Constitution.) or `2.1.2.2.2` (Rider Pounce: +2 Stat Points: +1 Agility and +1 Prowess; -1 Stat Point to Will.)
+  * `2.2.1.1` -> `2.2.1.1.1` (Long Marcher: +1 Stat Point to Constitution.) or `2.2.1.1.2` (Rider Pounce: +2 Stat Points: +1 Agility and +1 Prowess; -1 Stat Point to Will.)
+  * `2.2.1.2` -> `2.2.1.2.1` (Long Marcher: +1 Stat Point to Constitution.) or `2.2.1.2.2` (Rider Pounce: +2 Stat Points: +1 Agility and +1 Prowess; -1 Stat Point to Will.)
+  * `2.2.2.1` -> `2.2.2.1.1` (Long Marcher: +1 Stat Point to Constitution.) or `2.2.2.1.2` (Rider Pounce: +2 Stat Points: +1 Agility and +1 Prowess; -1 Stat Point to Will.)
+  * `2.2.2.2` -> `2.2.2.2.1` (Long Marcher: +1 Stat Point to Constitution.) or `2.2.2.2.2` (Rider Pounce: +2 Stat Points: +1 Agility and +1 Prowess; -1 Stat Point to Will.)
 
 * **Level 5 Final Paths (32 total):**
   * `1.1.1.1.1`, `1.1.1.1.2`, `1.1.1.2.1`, `1.1.1.2.2`, `1.1.2.1.1`, `1.1.2.1.2`, `1.1.2.2.1`, `1.1.2.2.2`, `1.2.1.1.1`, `1.2.1.1.2`, `1.2.1.2.1`, `1.2.1.2.2`, `1.2.2.1.1`, `1.2.2.1.2`, `1.2.2.2.1`, `1.2.2.2.2`, `2.1.1.1.1`, `2.1.1.1.2`, `2.1.1.2.1`, `2.1.1.2.2`, `2.1.2.1.1`, `2.1.2.1.2`, `2.1.2.2.1`, `2.1.2.2.2`, `2.2.1.1.1`, `2.2.1.1.2`, `2.2.1.2.1`, `2.2.1.2.2`, `2.2.2.1.1`, `2.2.2.1.2`, `2.2.2.2.1`, `2.2.2.2.2`
-
-## Balance Notes
-
-* Level 1 is a core stat or equivalent baseline benefit.
-* Levels 2-3 focus on expertise and situational +2 bonuses.
-* Level 4 is a once-per-scene utility or reaction power.
-* Level 5 is a capstone; stronger options may include a drawback.

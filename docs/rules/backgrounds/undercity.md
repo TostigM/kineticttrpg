@@ -1,75 +1,68 @@
 # Undercity Background
 
-This file defines the 5-level branching tree for the Undercity origin, with mechanical benefits at each decision.
+This file defines the 5-level branching tree for the Undercity origin. Every decision grants exactly one of: +1 stat point, +2 stat points with -1 stat point, or a basic proficiency.
 
 ## Decision Keys
 
 ### Level 1
-* `1` **Sewer Maze:** +1 Agility.
-* `2` **Old Foundations:** +1 Intellect.
+* `1` **Sewer Maze:** +1 Stat Point to Agility.
+* `2` **Old Foundations:** +1 Stat Point to Intellect.
 
 ### Level 2
-* `.1` **Burglar:** Expert mundane lock bypass and trap disarm.
-* `.2` **Broker:** Expert contraband appraisal and covert negotiation.
+* `.1` **Burglar:** Gain proficiency in Sleight of Hand.
+* `.2` **Broker:** Gain proficiency in Deception.
 
 ### Level 3
-* `.1` **Shadow Runner:** +2 to checks to evade pursuit in dense districts.
-* `.2` **Information Rat:** +2 to checks to gather secrets and coded rumors.
+* `.1` **Shadow Runner:** +2 Stat Points: +1 Agility and +1 Will; -1 Stat Point to Constitution.
+* `.2` **Information Rat:** +2 Stat Points: +1 Intellect and +1 Will; -1 Stat Point to Prowess.
 
 ### Level 4
-* `.1` **Vanishing Step:** Once per scene break line of sight after a hostile action.
-* `.2` **Hard Bargain:** Once per scene force a weak willed NPC to hesitate before acting.
+* `.1` **Knife School:** Gain proficiency with one Exotic Weapon.
+* `.2` **Back Alley Hex:** Gain proficiency in one basic Cantrip.
 
 ### Level 5
-* `.1` **Whisper Ledger:** Start each session with 1 leverage token (+2 on one social negotiation check).
-* `.2` **Dirty Opening:** First successful hit each combat against an unaware target applies [Bleeding] and generates +1 Heat.
+* `.1` **Whisper Ledger:** +1 Stat Point to Intellect.
+* `.2` **Dirty Opening:** +2 Stat Points: +1 Agility and +1 Prowess; -1 Stat Point to Will.
 
 ## Explicit Branch Tree
 
 * **Decision Level 1:**
-  * `1` Sewer Maze (+1 Agility.)
-  * `2` Old Foundations (+1 Intellect.)
+  * `1` Sewer Maze (+1 Stat Point to Agility.)
+  * `2` Old Foundations (+1 Stat Point to Intellect.)
 * **Decision Level 2:**
-  * `1` -> `1.1` (Burglar: Expert mundane lock bypass and trap disarm.) or `1.2` (Broker: Expert contraband appraisal and covert negotiation.)
-  * `2` -> `2.1` (Burglar: Expert mundane lock bypass and trap disarm.) or `2.2` (Broker: Expert contraband appraisal and covert negotiation.)
+  * `1` -> `1.1` (Burglar: Gain proficiency in Sleight of Hand.) or `1.2` (Broker: Gain proficiency in Deception.)
+  * `2` -> `2.1` (Burglar: Gain proficiency in Sleight of Hand.) or `2.2` (Broker: Gain proficiency in Deception.)
 * **Decision Level 3:**
-  * `1.1` -> `1.1.1` (Shadow Runner: +2 to checks to evade pursuit in dense districts.) or `1.1.2` (Information Rat: +2 to checks to gather secrets and coded rumors.)
-  * `1.2` -> `1.2.1` (Shadow Runner: +2 to checks to evade pursuit in dense districts.) or `1.2.2` (Information Rat: +2 to checks to gather secrets and coded rumors.)
-  * `2.1` -> `2.1.1` (Shadow Runner: +2 to checks to evade pursuit in dense districts.) or `2.1.2` (Information Rat: +2 to checks to gather secrets and coded rumors.)
-  * `2.2` -> `2.2.1` (Shadow Runner: +2 to checks to evade pursuit in dense districts.) or `2.2.2` (Information Rat: +2 to checks to gather secrets and coded rumors.)
+  * `1.1` -> `1.1.1` (Shadow Runner: +2 Stat Points: +1 Agility and +1 Will; -1 Stat Point to Constitution.) or `1.1.2` (Information Rat: +2 Stat Points: +1 Intellect and +1 Will; -1 Stat Point to Prowess.)
+  * `1.2` -> `1.2.1` (Shadow Runner: +2 Stat Points: +1 Agility and +1 Will; -1 Stat Point to Constitution.) or `1.2.2` (Information Rat: +2 Stat Points: +1 Intellect and +1 Will; -1 Stat Point to Prowess.)
+  * `2.1` -> `2.1.1` (Shadow Runner: +2 Stat Points: +1 Agility and +1 Will; -1 Stat Point to Constitution.) or `2.1.2` (Information Rat: +2 Stat Points: +1 Intellect and +1 Will; -1 Stat Point to Prowess.)
+  * `2.2` -> `2.2.1` (Shadow Runner: +2 Stat Points: +1 Agility and +1 Will; -1 Stat Point to Constitution.) or `2.2.2` (Information Rat: +2 Stat Points: +1 Intellect and +1 Will; -1 Stat Point to Prowess.)
 * **Decision Level 4:**
-  * `1.1.1` -> `1.1.1.1` (Vanishing Step: Once per scene break line of sight after a hostile action.) or `1.1.1.2` (Hard Bargain: Once per scene force a weak willed NPC to hesitate before acting.)
-  * `1.1.2` -> `1.1.2.1` (Vanishing Step: Once per scene break line of sight after a hostile action.) or `1.1.2.2` (Hard Bargain: Once per scene force a weak willed NPC to hesitate before acting.)
-  * `1.2.1` -> `1.2.1.1` (Vanishing Step: Once per scene break line of sight after a hostile action.) or `1.2.1.2` (Hard Bargain: Once per scene force a weak willed NPC to hesitate before acting.)
-  * `1.2.2` -> `1.2.2.1` (Vanishing Step: Once per scene break line of sight after a hostile action.) or `1.2.2.2` (Hard Bargain: Once per scene force a weak willed NPC to hesitate before acting.)
-  * `2.1.1` -> `2.1.1.1` (Vanishing Step: Once per scene break line of sight after a hostile action.) or `2.1.1.2` (Hard Bargain: Once per scene force a weak willed NPC to hesitate before acting.)
-  * `2.1.2` -> `2.1.2.1` (Vanishing Step: Once per scene break line of sight after a hostile action.) or `2.1.2.2` (Hard Bargain: Once per scene force a weak willed NPC to hesitate before acting.)
-  * `2.2.1` -> `2.2.1.1` (Vanishing Step: Once per scene break line of sight after a hostile action.) or `2.2.1.2` (Hard Bargain: Once per scene force a weak willed NPC to hesitate before acting.)
-  * `2.2.2` -> `2.2.2.1` (Vanishing Step: Once per scene break line of sight after a hostile action.) or `2.2.2.2` (Hard Bargain: Once per scene force a weak willed NPC to hesitate before acting.)
+  * `1.1.1` -> `1.1.1.1` (Knife School: Gain proficiency with one Exotic Weapon.) or `1.1.1.2` (Back Alley Hex: Gain proficiency in one basic Cantrip.)
+  * `1.1.2` -> `1.1.2.1` (Knife School: Gain proficiency with one Exotic Weapon.) or `1.1.2.2` (Back Alley Hex: Gain proficiency in one basic Cantrip.)
+  * `1.2.1` -> `1.2.1.1` (Knife School: Gain proficiency with one Exotic Weapon.) or `1.2.1.2` (Back Alley Hex: Gain proficiency in one basic Cantrip.)
+  * `1.2.2` -> `1.2.2.1` (Knife School: Gain proficiency with one Exotic Weapon.) or `1.2.2.2` (Back Alley Hex: Gain proficiency in one basic Cantrip.)
+  * `2.1.1` -> `2.1.1.1` (Knife School: Gain proficiency with one Exotic Weapon.) or `2.1.1.2` (Back Alley Hex: Gain proficiency in one basic Cantrip.)
+  * `2.1.2` -> `2.1.2.1` (Knife School: Gain proficiency with one Exotic Weapon.) or `2.1.2.2` (Back Alley Hex: Gain proficiency in one basic Cantrip.)
+  * `2.2.1` -> `2.2.1.1` (Knife School: Gain proficiency with one Exotic Weapon.) or `2.2.1.2` (Back Alley Hex: Gain proficiency in one basic Cantrip.)
+  * `2.2.2` -> `2.2.2.1` (Knife School: Gain proficiency with one Exotic Weapon.) or `2.2.2.2` (Back Alley Hex: Gain proficiency in one basic Cantrip.)
 * **Decision Level 5:**
-  * `1.1.1.1` -> `1.1.1.1.1` (Whisper Ledger: Start each session with 1 leverage token (+2 on one social negotiation check).) or `1.1.1.1.2` (Dirty Opening: First successful hit each combat against an unaware target applies [Bleeding] and generates +1 Heat.)
-  * `1.1.1.2` -> `1.1.1.2.1` (Whisper Ledger: Start each session with 1 leverage token (+2 on one social negotiation check).) or `1.1.1.2.2` (Dirty Opening: First successful hit each combat against an unaware target applies [Bleeding] and generates +1 Heat.)
-  * `1.1.2.1` -> `1.1.2.1.1` (Whisper Ledger: Start each session with 1 leverage token (+2 on one social negotiation check).) or `1.1.2.1.2` (Dirty Opening: First successful hit each combat against an unaware target applies [Bleeding] and generates +1 Heat.)
-  * `1.1.2.2` -> `1.1.2.2.1` (Whisper Ledger: Start each session with 1 leverage token (+2 on one social negotiation check).) or `1.1.2.2.2` (Dirty Opening: First successful hit each combat against an unaware target applies [Bleeding] and generates +1 Heat.)
-  * `1.2.1.1` -> `1.2.1.1.1` (Whisper Ledger: Start each session with 1 leverage token (+2 on one social negotiation check).) or `1.2.1.1.2` (Dirty Opening: First successful hit each combat against an unaware target applies [Bleeding] and generates +1 Heat.)
-  * `1.2.1.2` -> `1.2.1.2.1` (Whisper Ledger: Start each session with 1 leverage token (+2 on one social negotiation check).) or `1.2.1.2.2` (Dirty Opening: First successful hit each combat against an unaware target applies [Bleeding] and generates +1 Heat.)
-  * `1.2.2.1` -> `1.2.2.1.1` (Whisper Ledger: Start each session with 1 leverage token (+2 on one social negotiation check).) or `1.2.2.1.2` (Dirty Opening: First successful hit each combat against an unaware target applies [Bleeding] and generates +1 Heat.)
-  * `1.2.2.2` -> `1.2.2.2.1` (Whisper Ledger: Start each session with 1 leverage token (+2 on one social negotiation check).) or `1.2.2.2.2` (Dirty Opening: First successful hit each combat against an unaware target applies [Bleeding] and generates +1 Heat.)
-  * `2.1.1.1` -> `2.1.1.1.1` (Whisper Ledger: Start each session with 1 leverage token (+2 on one social negotiation check).) or `2.1.1.1.2` (Dirty Opening: First successful hit each combat against an unaware target applies [Bleeding] and generates +1 Heat.)
-  * `2.1.1.2` -> `2.1.1.2.1` (Whisper Ledger: Start each session with 1 leverage token (+2 on one social negotiation check).) or `2.1.1.2.2` (Dirty Opening: First successful hit each combat against an unaware target applies [Bleeding] and generates +1 Heat.)
-  * `2.1.2.1` -> `2.1.2.1.1` (Whisper Ledger: Start each session with 1 leverage token (+2 on one social negotiation check).) or `2.1.2.1.2` (Dirty Opening: First successful hit each combat against an unaware target applies [Bleeding] and generates +1 Heat.)
-  * `2.1.2.2` -> `2.1.2.2.1` (Whisper Ledger: Start each session with 1 leverage token (+2 on one social negotiation check).) or `2.1.2.2.2` (Dirty Opening: First successful hit each combat against an unaware target applies [Bleeding] and generates +1 Heat.)
-  * `2.2.1.1` -> `2.2.1.1.1` (Whisper Ledger: Start each session with 1 leverage token (+2 on one social negotiation check).) or `2.2.1.1.2` (Dirty Opening: First successful hit each combat against an unaware target applies [Bleeding] and generates +1 Heat.)
-  * `2.2.1.2` -> `2.2.1.2.1` (Whisper Ledger: Start each session with 1 leverage token (+2 on one social negotiation check).) or `2.2.1.2.2` (Dirty Opening: First successful hit each combat against an unaware target applies [Bleeding] and generates +1 Heat.)
-  * `2.2.2.1` -> `2.2.2.1.1` (Whisper Ledger: Start each session with 1 leverage token (+2 on one social negotiation check).) or `2.2.2.1.2` (Dirty Opening: First successful hit each combat against an unaware target applies [Bleeding] and generates +1 Heat.)
-  * `2.2.2.2` -> `2.2.2.2.1` (Whisper Ledger: Start each session with 1 leverage token (+2 on one social negotiation check).) or `2.2.2.2.2` (Dirty Opening: First successful hit each combat against an unaware target applies [Bleeding] and generates +1 Heat.)
+  * `1.1.1.1` -> `1.1.1.1.1` (Whisper Ledger: +1 Stat Point to Intellect.) or `1.1.1.1.2` (Dirty Opening: +2 Stat Points: +1 Agility and +1 Prowess; -1 Stat Point to Will.)
+  * `1.1.1.2` -> `1.1.1.2.1` (Whisper Ledger: +1 Stat Point to Intellect.) or `1.1.1.2.2` (Dirty Opening: +2 Stat Points: +1 Agility and +1 Prowess; -1 Stat Point to Will.)
+  * `1.1.2.1` -> `1.1.2.1.1` (Whisper Ledger: +1 Stat Point to Intellect.) or `1.1.2.1.2` (Dirty Opening: +2 Stat Points: +1 Agility and +1 Prowess; -1 Stat Point to Will.)
+  * `1.1.2.2` -> `1.1.2.2.1` (Whisper Ledger: +1 Stat Point to Intellect.) or `1.1.2.2.2` (Dirty Opening: +2 Stat Points: +1 Agility and +1 Prowess; -1 Stat Point to Will.)
+  * `1.2.1.1` -> `1.2.1.1.1` (Whisper Ledger: +1 Stat Point to Intellect.) or `1.2.1.1.2` (Dirty Opening: +2 Stat Points: +1 Agility and +1 Prowess; -1 Stat Point to Will.)
+  * `1.2.1.2` -> `1.2.1.2.1` (Whisper Ledger: +1 Stat Point to Intellect.) or `1.2.1.2.2` (Dirty Opening: +2 Stat Points: +1 Agility and +1 Prowess; -1 Stat Point to Will.)
+  * `1.2.2.1` -> `1.2.2.1.1` (Whisper Ledger: +1 Stat Point to Intellect.) or `1.2.2.1.2` (Dirty Opening: +2 Stat Points: +1 Agility and +1 Prowess; -1 Stat Point to Will.)
+  * `1.2.2.2` -> `1.2.2.2.1` (Whisper Ledger: +1 Stat Point to Intellect.) or `1.2.2.2.2` (Dirty Opening: +2 Stat Points: +1 Agility and +1 Prowess; -1 Stat Point to Will.)
+  * `2.1.1.1` -> `2.1.1.1.1` (Whisper Ledger: +1 Stat Point to Intellect.) or `2.1.1.1.2` (Dirty Opening: +2 Stat Points: +1 Agility and +1 Prowess; -1 Stat Point to Will.)
+  * `2.1.1.2` -> `2.1.1.2.1` (Whisper Ledger: +1 Stat Point to Intellect.) or `2.1.1.2.2` (Dirty Opening: +2 Stat Points: +1 Agility and +1 Prowess; -1 Stat Point to Will.)
+  * `2.1.2.1` -> `2.1.2.1.1` (Whisper Ledger: +1 Stat Point to Intellect.) or `2.1.2.1.2` (Dirty Opening: +2 Stat Points: +1 Agility and +1 Prowess; -1 Stat Point to Will.)
+  * `2.1.2.2` -> `2.1.2.2.1` (Whisper Ledger: +1 Stat Point to Intellect.) or `2.1.2.2.2` (Dirty Opening: +2 Stat Points: +1 Agility and +1 Prowess; -1 Stat Point to Will.)
+  * `2.2.1.1` -> `2.2.1.1.1` (Whisper Ledger: +1 Stat Point to Intellect.) or `2.2.1.1.2` (Dirty Opening: +2 Stat Points: +1 Agility and +1 Prowess; -1 Stat Point to Will.)
+  * `2.2.1.2` -> `2.2.1.2.1` (Whisper Ledger: +1 Stat Point to Intellect.) or `2.2.1.2.2` (Dirty Opening: +2 Stat Points: +1 Agility and +1 Prowess; -1 Stat Point to Will.)
+  * `2.2.2.1` -> `2.2.2.1.1` (Whisper Ledger: +1 Stat Point to Intellect.) or `2.2.2.1.2` (Dirty Opening: +2 Stat Points: +1 Agility and +1 Prowess; -1 Stat Point to Will.)
+  * `2.2.2.2` -> `2.2.2.2.1` (Whisper Ledger: +1 Stat Point to Intellect.) or `2.2.2.2.2` (Dirty Opening: +2 Stat Points: +1 Agility and +1 Prowess; -1 Stat Point to Will.)
 
 * **Level 5 Final Paths (32 total):**
   * `1.1.1.1.1`, `1.1.1.1.2`, `1.1.1.2.1`, `1.1.1.2.2`, `1.1.2.1.1`, `1.1.2.1.2`, `1.1.2.2.1`, `1.1.2.2.2`, `1.2.1.1.1`, `1.2.1.1.2`, `1.2.1.2.1`, `1.2.1.2.2`, `1.2.2.1.1`, `1.2.2.1.2`, `1.2.2.2.1`, `1.2.2.2.2`, `2.1.1.1.1`, `2.1.1.1.2`, `2.1.1.2.1`, `2.1.1.2.2`, `2.1.2.1.1`, `2.1.2.1.2`, `2.1.2.2.1`, `2.1.2.2.2`, `2.2.1.1.1`, `2.2.1.1.2`, `2.2.1.2.1`, `2.2.1.2.2`, `2.2.2.1.1`, `2.2.2.1.2`, `2.2.2.2.1`, `2.2.2.2.2`
-
-## Balance Notes
-
-* Level 1 is a core stat or equivalent baseline benefit.
-* Levels 2-3 focus on expertise and situational +2 bonuses.
-* Level 4 is a once-per-scene utility or reaction power.
-* Level 5 is a capstone; stronger options may include a drawback.

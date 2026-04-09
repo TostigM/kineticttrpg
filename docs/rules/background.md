@@ -20,6 +20,7 @@ Path notation follows this format: `1`, `2`, `1.1`, `2.2.1`, `1.2.2.1.2`.
 * Start at Decision Level 1.
 * At each level, pick one child path from your current node.
 * Continue until Decision Level 5 to finalize your background path.
+* Each decision choice must grant one of: `+1 Stat Point`, `+2 Stat Points and -1 Stat Point`, or `a basic proficiency`.
 
 ## Background Files
 
